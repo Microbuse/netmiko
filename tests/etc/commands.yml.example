@@ -161,7 +161,7 @@ juniper_screenos:
     - 'set alias test "test"'
   config_verification: "get config | inc alias"
 
-fortinet:
+clavister:
   version: "get system status"
   basic: "get system interface physical"
   extended_output: "get system status"

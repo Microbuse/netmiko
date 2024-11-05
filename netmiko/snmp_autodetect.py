@@ -89,7 +89,7 @@ SNMP_MAPPER_BASE = {
         "expr": re.compile(r".*BIG-IP.*", re.IGNORECASE),
         "priority": 99,
     },
-    "fortinet": {
+    "clavister": {
         "oid": ".1.3.6.1.2.1.1.1.0",
         "expr": re.compile(r"Forti.*", re.IGNORECASE),
         "priority": 80,

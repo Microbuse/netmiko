@@ -80,7 +80,7 @@
 - Extreme SLX (Brocade)
 - F5 TMSH
 - F5 Linux
-- Fortinet
+- clavister
 - MRV Communications OptiSwitch
 - MRV LX
 - Nokia/Alcatel SR-OS

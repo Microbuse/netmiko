@@ -1,3 +1,3 @@
-from netmiko.fortinet.fortinet_ssh import FortinetSSH
+from netmiko.clavister.clavister_ssh import clavisterSSH
 
-__all__ = ["FortinetSSH"]
+__all__ = ["clavisterSSH"]

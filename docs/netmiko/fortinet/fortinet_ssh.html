@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.6.3" />
-<title>netmiko.fortinet.fortinet_ssh API documentation</title>
+<title>netmiko.clavister.clavister_ssh API documentation</title>
 <meta name="description" content="" />
 <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
@@ -17,7 +17,7 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>netmiko.fortinet.fortinet_ssh</code></h1>
+<h1 class="title">Module <code>netmiko.clavister.clavister_ssh</code></h1>
 </header>
 <section id="section-intro">
 <details class="source">
@@ -28,7 +28,7 @@ import re
 from netmiko.cisco_base_connection import CiscoSSHConnection
 
 
-class FortinetSSH(CiscoSSHConnection):
+class clavisterSSH(CiscoSSHConnection):
     def _modify_connection_params(self):
         &#34;&#34;&#34;Modify connection parameters prior to SSH connection.&#34;&#34;&#34;
         paramiko.Transport._preferred_kex = (
@@ -123,11 +123,11 @@ class FortinetSSH(CiscoSSHConnection):
         return super().cleanup(command=command)
 
     def config_mode(self, config_command=&#34;&#34;):
-        &#34;&#34;&#34;No config mode for Fortinet devices.&#34;&#34;&#34;
+        &#34;&#34;&#34;No config mode for clavister devices.&#34;&#34;&#34;
         return &#34;&#34;
 
     def exit_config_mode(self, exit_config=&#34;&#34;):
-        &#34;&#34;&#34;No config mode for Fortinet devices.&#34;&#34;&#34;
+        &#34;&#34;&#34;No config mode for clavister devices.&#34;&#34;&#34;
         return &#34;&#34;
 
     def save_config(self, *args, **kwargs):
@@ -144,8 +144,8 @@ class FortinetSSH(CiscoSSHConnection):
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="netmiko.fortinet.fortinet_ssh.FortinetSSH"><code class="flex name class">
-<span>class <span class="ident">FortinetSSH</span></span>
+<dt id="netmiko.clavister.clavister_ssh.clavisterSSH"><code class="flex name class">
+<span>class <span class="ident">clavisterSSH</span></span>
 <span>(</span><span>ip='', host='', username='', password=None, secret='', port=None, device_type='', verbose=False, global_delay_factor=1, global_cmd_verify=None, use_keys=False, key_file=None, pkey=None, passphrase=None, allow_agent=False, ssh_strict=False, system_host_keys=False, alt_host_keys=False, alt_key_file='', ssh_config_file=None, conn_timeout=5, auth_timeout=None, banner_timeout=15, blocking_timeout=20, timeout=100, session_timeout=60, keepalive=0, default_enter=None, response_return=None, serial_settings=None, fast_cli=False, session_log=None, session_log_record_writes=False, session_log_file_mode='write', allow_auto_change=False, encoding='ascii', sock=None, auto_connect=True)</span>
 </code></dt>
 <dd>
@@ -282,7 +282,7 @@ class FortinetSSH(CiscoSSHConnection):
 </code></pre></section>
 <details class="source">
 <summary>Source code</summary>
-<pre><code class="python">class FortinetSSH(CiscoSSHConnection):
+<pre><code class="python">class clavisterSSH(CiscoSSHConnection):
     def _modify_connection_params(self):
         &#34;&#34;&#34;Modify connection parameters prior to SSH connection.&#34;&#34;&#34;
         paramiko.Transport._preferred_kex = (
@@ -377,11 +377,11 @@ class FortinetSSH(CiscoSSHConnection):
         return super().cleanup(command=command)
 
     def config_mode(self, config_command=&#34;&#34;):
-        &#34;&#34;&#34;No config mode for Fortinet devices.&#34;&#34;&#34;
+        &#34;&#34;&#34;No config mode for clavister devices.&#34;&#34;&#34;
         return &#34;&#34;
 
     def exit_config_mode(self, exit_config=&#34;&#34;):
-        &#34;&#34;&#34;No config mode for Fortinet devices.&#34;&#34;&#34;
+        &#34;&#34;&#34;No config mode for clavister devices.&#34;&#34;&#34;
         return &#34;&#34;
 
     def save_config(self, *args, **kwargs):
@@ -396,7 +396,7 @@ class FortinetSSH(CiscoSSHConnection):
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="netmiko.fortinet.fortinet_ssh.FortinetSSH.cleanup"><code class="name flex">
+<dt id="netmiko.clavister.clavister_ssh.clavisterSSH.cleanup"><code class="name flex">
 <span>def <span class="ident">cleanup</span></span>(<span>self, command='exit')</span>
 </code></dt>
 <dd>
@@ -417,19 +417,19 @@ class FortinetSSH(CiscoSSHConnection):
     return super().cleanup(command=command)</code></pre>
 </details>
 </dd>
-<dt id="netmiko.fortinet.fortinet_ssh.FortinetSSH.config_mode"><code class="name flex">
+<dt id="netmiko.clavister.clavister_ssh.clavisterSSH.config_mode"><code class="name flex">
 <span>def <span class="ident">config_mode</span></span>(<span>self, config_command='')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>No config mode for Fortinet devices.</p></section>
+<section class="desc"><p>No config mode for clavister devices.</p></section>
 <details class="source">
 <summary>Source code</summary>
 <pre><code class="python">def config_mode(self, config_command=&#34;&#34;):
-    &#34;&#34;&#34;No config mode for Fortinet devices.&#34;&#34;&#34;
+    &#34;&#34;&#34;No config mode for clavister devices.&#34;&#34;&#34;
     return &#34;&#34;</code></pre>
 </details>
 </dd>
-<dt id="netmiko.fortinet.fortinet_ssh.FortinetSSH.disable_paging"><code class="name flex">
+<dt id="netmiko.clavister.clavister_ssh.clavisterSSH.disable_paging"><code class="name flex">
 <span>def <span class="ident">disable_paging</span></span>(<span>self, delay_factor=1, **kwargs)</span>
 </code></dt>
 <dd>
@@ -474,19 +474,19 @@ class FortinetSSH(CiscoSSHConnection):
     return output + new_output</code></pre>
 </details>
 </dd>
-<dt id="netmiko.fortinet.fortinet_ssh.FortinetSSH.exit_config_mode"><code class="name flex">
+<dt id="netmiko.clavister.clavister_ssh.clavisterSSH.exit_config_mode"><code class="name flex">
 <span>def <span class="ident">exit_config_mode</span></span>(<span>self, exit_config='')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>No config mode for Fortinet devices.</p></section>
+<section class="desc"><p>No config mode for clavister devices.</p></section>
 <details class="source">
 <summary>Source code</summary>
 <pre><code class="python">def exit_config_mode(self, exit_config=&#34;&#34;):
-    &#34;&#34;&#34;No config mode for Fortinet devices.&#34;&#34;&#34;
+    &#34;&#34;&#34;No config mode for clavister devices.&#34;&#34;&#34;
     return &#34;&#34;</code></pre>
 </details>
 </dd>
-<dt id="netmiko.fortinet.fortinet_ssh.FortinetSSH.save_config"><code class="name flex">
+<dt id="netmiko.clavister.clavister_ssh.clavisterSSH.save_config"><code class="name flex">
 <span>def <span class="ident">save_config</span></span>(<span>self, *args, **kwargs)</span>
 </code></dt>
 <dd>
@@ -498,7 +498,7 @@ class FortinetSSH(CiscoSSHConnection):
     raise NotImplementedError</code></pre>
 </details>
 </dd>
-<dt id="netmiko.fortinet.fortinet_ssh.FortinetSSH.session_preparation"><code class="name flex">
+<dt id="netmiko.clavister.clavister_ssh.clavisterSSH.session_preparation"><code class="name flex">
 <span>def <span class="ident">session_preparation</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -585,20 +585,20 @@ class FortinetSSH(CiscoSSHConnection):
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="netmiko.fortinet" href="index.html">netmiko.fortinet</a></code></li>
+<li><code><a title="netmiko.clavister" href="index.html">netmiko.clavister</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="netmiko.fortinet.fortinet_ssh.FortinetSSH" href="#netmiko.fortinet.fortinet_ssh.FortinetSSH">FortinetSSH</a></code></h4>
+<h4><code><a title="netmiko.clavister.clavister_ssh.clavisterSSH" href="#netmiko.clavister.clavister_ssh.clavisterSSH">clavisterSSH</a></code></h4>
 <ul class="two-column">
-<li><code><a title="netmiko.fortinet.fortinet_ssh.FortinetSSH.cleanup" href="#netmiko.fortinet.fortinet_ssh.FortinetSSH.cleanup">cleanup</a></code></li>
-<li><code><a title="netmiko.fortinet.fortinet_ssh.FortinetSSH.config_mode" href="#netmiko.fortinet.fortinet_ssh.FortinetSSH.config_mode">config_mode</a></code></li>
-<li><code><a title="netmiko.fortinet.fortinet_ssh.FortinetSSH.disable_paging" href="#netmiko.fortinet.fortinet_ssh.FortinetSSH.disable_paging">disable_paging</a></code></li>
-<li><code><a title="netmiko.fortinet.fortinet_ssh.FortinetSSH.exit_config_mode" href="#netmiko.fortinet.fortinet_ssh.FortinetSSH.exit_config_mode">exit_config_mode</a></code></li>
-<li><code><a title="netmiko.fortinet.fortinet_ssh.FortinetSSH.save_config" href="#netmiko.fortinet.fortinet_ssh.FortinetSSH.save_config">save_config</a></code></li>
-<li><code><a title="netmiko.fortinet.fortinet_ssh.FortinetSSH.session_preparation" href="#netmiko.fortinet.fortinet_ssh.FortinetSSH.session_preparation">session_preparation</a></code></li>
+<li><code><a title="netmiko.clavister.clavister_ssh.clavisterSSH.cleanup" href="#netmiko.clavister.clavister_ssh.clavisterSSH.cleanup">cleanup</a></code></li>
+<li><code><a title="netmiko.clavister.clavister_ssh.clavisterSSH.config_mode" href="#netmiko.clavister.clavister_ssh.clavisterSSH.config_mode">config_mode</a></code></li>
+<li><code><a title="netmiko.clavister.clavister_ssh.clavisterSSH.disable_paging" href="#netmiko.clavister.clavister_ssh.clavisterSSH.disable_paging">disable_paging</a></code></li>
+<li><code><a title="netmiko.clavister.clavister_ssh.clavisterSSH.exit_config_mode" href="#netmiko.clavister.clavister_ssh.clavisterSSH.exit_config_mode">exit_config_mode</a></code></li>
+<li><code><a title="netmiko.clavister.clavister_ssh.clavisterSSH.save_config" href="#netmiko.clavister.clavister_ssh.clavisterSSH.save_config">save_config</a></code></li>
+<li><code><a title="netmiko.clavister.clavister_ssh.clavisterSSH.session_preparation" href="#netmiko.clavister.clavister_ssh.clavisterSSH.session_preparation">session_preparation</a></code></li>
 </ul>
 </li>
 </ul>

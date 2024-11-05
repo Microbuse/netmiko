@@ -78,7 +78,7 @@ SHOW_RUN_MAPPER = {
     "ericsson_ipos": "show configuration",
     "hp_comware": "display current-configuration",
     "huawei": "display current-configuration",
-    "fortinet": "show full-configuration",
+    "clavister": "show full-configuration",
     "checkpoint": "show configuration",
     "cisco_wlc": "show run-config",
     "enterasys": "show running-config",

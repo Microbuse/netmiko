@@ -7,7 +7,7 @@ from netmiko.no_config import NoConfig
 from netmiko.cisco_base_connection import CiscoSSHConnection
 
 
-class FortinetSSH(NoConfig, CiscoSSHConnection):
+class clavisterSSH(NoConfig, CiscoSSHConnection):
     def _modify_connection_params(self) -> None:
         """Modify connection parameters prior to SSH connection."""
         paramiko_transport = getattr(paramiko, "Transport")
